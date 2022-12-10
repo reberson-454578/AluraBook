@@ -1,0 +1,67 @@
+.banner{
+    background: var(--azul-degrade);
+    color: var(--branco);
+    text-align: center;
+    padding: 2.5em 2em;
+}
+
+.banner__titulo{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.banner__texto{
+    font-size: 16px;
+    line-height: 24px;
+    margin: 1em 0;
+}
+
+.banner__pesquisa{
+    background: transparent;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    border: solid #ffffff 1px;
+    color: var(--branco);
+    border-radius: 24px;
+    padding: 1em;
+    width:100%;
+}
+
+.banner__pesquisa::placeholder{
+    font-family: var(--fonte-principal);
+    color: var(--branco);
+    font-weight: 400;
+    text-align: center;
+    background: url("../Imagens/Vector.svg") no-repeat;
+    background-position: 1em;
+}
+
+@media screen and (min-width: 1024px){
+    .banner__titulo{
+        font-size: 36px;
+    }
+
+    .banner__pesquisa{
+        width: 50%;
+    }
+
+    .banner__pesquisa::placeholder{
+        background-position: 6em;
+    }
+}
+
+@media screen and (min-width: 1728px){
+
+    .banner__pesquisa{
+        width: 35%;
+    }
+
+    .banner__pesquisa::placeholder{
+        background-position: 9em;
+    }
+
+    .banner{
+        padding: 6em 0;
+    }
+}
